@@ -6,7 +6,7 @@ import '../server';
 
 describe('Express Server', () => {
   after(() => {
-    process.exit(2)
+    process.exit(5)
   });
 
   it('should respond to GET with 200 status', async () => {
