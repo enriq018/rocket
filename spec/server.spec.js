@@ -5,10 +5,6 @@ import 'babel-polyfill'; // for async/await compiling
 import '../server';
 
 describe('Express Server', () => {
-  after(() => {
-    process.exit(5)
-  });
-
   it('should respond to GET with 200 status', async () => {
     const response = await axios.get(`http://127.0.0.1:${process.env.PORT}`);
     expect(response.status).to.equal(200);
