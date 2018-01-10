@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev-server": "nodemon --exec babel-node -- server/index.js",
-    "test": "mocha -R spec --compilers js:babel-register spec/"
+    "test": "mocha -R spec --compilers js:babel-register spec/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,7 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-airbnb": "^2.4.0",
     "babel-preset-env": "^1.6.1",
     "chai": "^4.1.2",
@@ -52,5 +53,8 @@
     "presets": [
       "env"
     ]
-  }
+  },
+  "eslintIgnore": [
+    "**/*.spec.js"
+  ]
 }
