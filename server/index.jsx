@@ -7,7 +7,7 @@ import ReactDOMServer from 'react-dom/server';
 import Test from '../client/TestView';
 
 const app = express();
-const port = process.env.PORT;
+const port = process.env.PORT || 1337;
 
 app.listen(port, () => console.log(`express is listening on ${port}`)); // eslint-disable-line
 
