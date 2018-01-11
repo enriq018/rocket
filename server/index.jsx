@@ -2,6 +2,9 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import {} from 'dotenv/config';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import Test from '../client/TestView';
 
 const app = express();
 const port = process.env.PORT;
@@ -13,5 +16,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-  res.send('hello there');
+  const message = req.query.msg || 'hello world';
+  res.send(ReactDOMServer.renderToString(<Test msg={message} />));
 });
