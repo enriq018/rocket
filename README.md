@@ -1,6 +1,6 @@
-# Project Name
+# rocket!
 
-> Pithy project description
+Virtual Reality Game Store
 
 ## Team
 
