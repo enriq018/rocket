@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev-server": "nodemon --exec babel-node -- server/index.js",
+    "dev-server": "nodemon --exec babel-node --presets env,react -- server/index.jsx",
     "test": "mocha -R spec --compilers js:babel-register spec/"
   },
   "repository": {
@@ -57,5 +57,8 @@
     "presets": [
       "env"
     ]
-  }
+  },
+  "eslintIgnore": [
+    "**/*.spec.js"
+  ]
 }

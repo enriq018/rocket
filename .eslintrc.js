@@ -7,5 +7,9 @@ module.exports = {
                     "aspects": [ "noHref", "invalidHref", "preferButton" ],
                     "arrow-body-style": ["error", "as-needed"]
                 }]
+    },
+    "globals": {
+      "document": true,
+      "window": true
     }
 }

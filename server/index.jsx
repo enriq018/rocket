@@ -5,8 +5,8 @@ import cors from 'cors';
 import path from 'path';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import Test from '../client/TestView';
-// import App from '../client/App';
+import Test from '../client/compiled/TestView';
+// import App from '../client/compiled/App';
 
 const app = express();
 const port = process.env.PORT || 1337;
