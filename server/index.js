@@ -7,7 +7,6 @@ import path from 'path';
 const app = express();
 const port = process.env.PORT || 1337;
 const assets = path.join(__dirname, '../client');
-console.log(assets)
 
 app.listen(port, () => console.log(`express is listening on ${port}`)); // eslint-disable-line
 // disable for global requires since airbnb doesn't like them being in a block
