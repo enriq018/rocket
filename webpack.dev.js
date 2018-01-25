@@ -13,9 +13,7 @@ const config = {
     publicPath: '/client/',
   },
   plugins: [
-    // OccurenceOrderPlugin is needed for webpack 1.x only
     new webpack.HotModuleReplacementPlugin(),
-    // Use NoErrorsPlugin for webpack 1.x
     new webpack.NoEmitOnErrorsPlugin(),
   ],
   module: {
