@@ -20,6 +20,7 @@
   "homepage": "https://github.com/RocketVR/SteamClone#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "babel-loader": "^7.1.2",
     "babel-preset-react": "^6.24.1",
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
@@ -29,6 +30,7 @@
     "lodash": "^4.17.4",
     "nodejs": "0.0.0",
     "passport": "^0.4.0",
+    "path": "^0.12.7",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

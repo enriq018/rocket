@@ -6,7 +6,7 @@ const SRC_DIR = path.resolve(__dirname, 'client/');
 
 const config = {
   resolve: { extensions: ['.webpack.js', '.web.js', '.js', '.json', '.jsx'] },
-  entry: ['webpack-hot-middleware/client?reload=true', `${SRC_DIR}/index.js`],
+  entry: ['webpack-hot-middleware/client?reload=true', `${SRC_DIR}/components/App.jsx`],
   output: {
     path: DIST_DIR,
     filename: 'bundle.js',
@@ -25,7 +25,7 @@ const config = {
         include: SRC_DIR,
         loader: 'babel-loader',
         query: {
-          presets: ['react', 'es2015'],
+          presets: ['react', 'env'],
         },
       },
     ],
